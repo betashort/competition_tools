@@ -16,4 +16,7 @@ Kaggleで使ったコードを貯めていきます。
 
 ## model
 
-## Metric
+## Evaluation
+* [Regression](./Table/eval_score/evaluation_regression.md)
+* [Classification](Table/eval_score/evaluation_classification.md)
+* []
