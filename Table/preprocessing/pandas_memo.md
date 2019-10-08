@@ -6,7 +6,7 @@ pd.options.display.max_columns = None
 pd.options.display.max_rows = None
 ```
 
-## 値による行のグループ分け
+## 集約(値による行のグループ分け)
 ```python
 #列によるグループ分けの平均
 pd.groupby('列').mean()
@@ -22,6 +22,9 @@ def function(x):
 
 #関数の適用
 pd.apply(x)
+
+#ラムダ式
+pd.apply(lambda x : x + 1)
 ```
 
 ## DataFrameの連結
@@ -65,6 +68,22 @@ pd.nunique()
 pd.isnull().sum()
 
 pd.isnull().sum().sort_values(ascending=False)
+```
+
+# Seriese 列名の変更
+```python
+Series.rename('列名')
+
+Seriese.name = '列名'
+```
+
+
+```python
+
+```
+
+```python
+
 ```
 
 ```python
