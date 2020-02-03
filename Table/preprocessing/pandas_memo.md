@@ -14,6 +14,10 @@ pd.groupby('列').mean()
 #２つの列の値による行のグループ分けの、列nのデータ
 pd.groupby(['列1', '列2'])['列n']
 ```
+* 平均 mean
+* 最大 max
+* 最小 min
+* 
 
 ## 列のすべての要素に対して関数を適用する
 ```python
@@ -21,7 +25,7 @@ def function(x):
     return(x)
 
 #関数の適用
-pd.apply(x)
+pd.apply(function)
 
 #ラムダ式
 pd.apply(lambda x : x + 1)
@@ -77,13 +81,26 @@ Series.rename('列名')
 Seriese.name = '列名'
 ```
 
+# リストから値が一致する行を抽出
 
 ```python
-
+df[df["row"].isin(list_values)]
 ```
 
-```python
+# 時間のデータ
 
+```python
+time_series = pd.to_datetime(siries, format=)
+
+```
+## 処理
+
+```python
+#年
+time_series.dt.year
+
+#時間
+time_series.dt.hour
 ```
 
 ```python
