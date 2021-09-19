@@ -1,6 +1,41 @@
-# kaggle_tools_repository
+# data_tools_repository
 
-Kaggleで使ったコードを貯めていきます。  
+Kaggleなどで使ったコードを貯めていきます。  
+
+# anaconda
+pipで管理する。(condaの方がいい？)  
+
+## 仮想環境を作る
+
+### default
+* medical-image
+* NLP
+
+```
+conda env export > medical-image.yml
+```
+
+### defaultから作業用の仮想環境を再構築
+```
+conda env create -n {new_env} -f medical-image.yml
+```
+もしくは、
+```
+conda create -n {new_env} --clone medical-image
+```
+
+### 仮想環境を起動する。
+```
+conda activate {new_env}
+
+#for mac
+source activate {new_env}
+```
+
+### 仮想環境を閉じる
+```
+conda deactivate
+```
 
 # 1. Table competition
 
